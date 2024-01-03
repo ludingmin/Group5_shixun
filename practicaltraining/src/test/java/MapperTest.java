@@ -1,5 +1,6 @@
 import com.group5.Group5Application;
 import com.group5.Mapper.UserMapper;
+import com.group5.domain.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,7 +12,7 @@ public class MapperTest {
     UserMapper userMapper;
     @Test
     void contextLoads() {
-        System.out.println("123");
+        User user = userMapper.selectById(1);
     }
 
 }

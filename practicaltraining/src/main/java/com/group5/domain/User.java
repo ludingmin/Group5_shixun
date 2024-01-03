@@ -30,6 +30,6 @@ public class User {
     private Date fUpdatetime;
     @JsonFormat(pattern = "MM-dd HH:mm",timezone="GMT+8")
     private Date fLastLoginTime;
-    private Integer fMemberTires;
+    private Integer fMemberTiers;
     private String fMemo;
 }
